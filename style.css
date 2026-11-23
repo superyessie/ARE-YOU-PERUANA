@@ -1,0 +1,103 @@
+body {
+    background-color: #180505;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    color: #8b0000;
+}
+
+h1 {
+    color: #a30000;
+    font-size: 40px;
+    text-shadow: 0px 0px 10px #5c0000;
+}
+
+p {
+    color: #750000;
+    font-size: 20px;
+}
+
+button {
+    background-color: #260707;
+    color: #b30000;
+    border: 2px solid #6b0000;
+    padding: 12px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #780000;
+    color: #ffffff;
+    border-color: #b30000;
+    box-shadow: 0px 0px 15px #8b0000;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mensaje {
+    color: #c00000;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* CAOS */
+
+#caos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.textoCaos {
+    position: absolute;
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 0 0 10px red;
+    animation: aparecer 0.2s ease-in;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* PANTALLA NEGRA */
+
+#pantallaNegra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+transition: opacity 1s;}
+
+#pantallaNegra.activa {
+    opacity: 1;
+}
+
+/* NUEVAS OPCIONES */
+
+#opciones {
+    margin-top: 30px;
+}           
